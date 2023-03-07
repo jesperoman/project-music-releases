@@ -1,12 +1,25 @@
 import React from 'react';
 import data from './data.json';
+import { Album } from './Album.js';
 
 console.log(data);
 
+const albumItems = data.albums.items.map((item, index) => {
+  item.key = index;
+  return item;
+});
+
 export const App = () => {
   return (
+   <section> 
     <div>
-      Find me in src/app.js!
+      {albumItems.map((item) => (
+      <Album item={item} key={item.key} />
+        ))
+      }
     </div>
-  );
-}
+    {imageItems.map((item) => (
+      <Images item={item} key={item.key} />
+    ))}
+  </div>
+</section>})
