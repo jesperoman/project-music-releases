@@ -12,9 +12,11 @@ const albumItems = data.albums.items.map((item, index) => {
 export const App = () => {
   return (
     <div>
-      {albumItems.map((item) => (
-        <Album item={item} key={item.key} />
-      ))}
+      {
+        albumItems.map((item) => (
+          <Album item={item} key={item.key} />
+        ))
+      }
     </div>
   )
 }

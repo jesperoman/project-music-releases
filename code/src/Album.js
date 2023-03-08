@@ -5,7 +5,6 @@ export const Album = (props) => {
 
     <div className="rubrik">
       <h1>{props.item.name}</h1>
-      <img alt="hej" src={props.item.images.url} />
     </div>
   )
 }
