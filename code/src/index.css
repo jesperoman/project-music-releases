@@ -5,9 +5,27 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+ 
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.album-name{
+  color:white;
+}
+
+.artist-name{
+  text-decoration: none;
+  color:white;
+}
+
+.icons-container{
+max-width: 40px;
+max-height: 40px;
+display:flex;
+flex-direction: row;
+justify-content: space-between;
 }
