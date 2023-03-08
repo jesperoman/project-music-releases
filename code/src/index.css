@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
- 
+ background-color: black;
 }
 
 code {
@@ -14,12 +14,17 @@ code {
 }
 
 .album-name{
-  color:white;
+  font-family:Helvetica;
+  color:#ffffff;
+  font-size:14px;
+  
 }
 
 .artist-name{
   text-decoration: none;
-  color:white;
+  font-family:Helvetica;
+  font-size:14px;  
+  color:#a0a0a0;
 }
 
 .icons-container{
@@ -28,4 +33,8 @@ max-height: 40px;
 display:flex;
 flex-direction: row;
 justify-content: space-between;
+}
+
+.heart-icon, .play-icon, .dots-icon {
+  background-color: white;
 }
