@@ -1,20 +1,21 @@
 import React from 'react';
+// import { FlipCard } from 'FlipCard';
 import data from './data.json';
-import { Album } from './Album.js';
+import { Album } from './album/Album';
+import { Title } from './album/Title';
 
 console.log(data);
 
-const albumItems = data.albums.items.map((item, index) => {
-  item.key = index;
-  return item;
-});
+console.log('hej');
+const albumItems = data.albums.items;
 
 export const App = () => {
   return (
-    <div>
+    <div className="records">
+      <Title title="Evas skivor" />
       {
         albumItems.map((item) => (
-          <Album item={item} key={item.key} />
+          <Album item={item} key={Math.random()} />
         ))
       }
     </div>
