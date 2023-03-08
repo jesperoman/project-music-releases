@@ -1,10 +1,6 @@
 import React from 'react';
 
 export const Album = (props) => {
-<<<<<<< HEAD
-  return (<h1>{props.item.name}</h1>)
-}
-=======
   const artists = props.item.artists.map((artist) => ({
     name: artist.name,
     url: artist.external_urls.spotify
@@ -38,4 +34,3 @@ export const Album = (props) => {
     </div>
   )
 }
->>>>>>> refs/remotes/origin/master

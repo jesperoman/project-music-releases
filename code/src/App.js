@@ -19,8 +19,4 @@ export const App = () => {
       }
     </div>
   )
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> refs/remotes/origin/master
